@@ -49,6 +49,7 @@ class InteractiveRecord
     SQL
     
     DB[:conn].execute(sql)
+    @id = DB[:conn].exucute()
   end
   
 end
