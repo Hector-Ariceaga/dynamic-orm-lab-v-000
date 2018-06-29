@@ -64,7 +64,7 @@ class InteractiveRecord
     sql = <<-SQL
       SELECT * FROM #{self.table_name} WHERE #{attribute.key) = ?
     SQL
-    
+    binding.pry
     DB[:coon].execute(sql, attribute.value)
   end 
   
