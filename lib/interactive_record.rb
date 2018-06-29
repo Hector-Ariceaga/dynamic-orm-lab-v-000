@@ -39,8 +39,7 @@ class InteractiveRecord
     values = []
     self.class.column_names.each do |column_name|
       values << "'#{send(column_name)}'" unless column_name.nil?
-   
-    end
+    end.
     
   end 
   
