@@ -16,5 +16,6 @@ class InteractiveRecord
       column_names << column["name"]
     end
     binding.pry
+  end
     
 end
