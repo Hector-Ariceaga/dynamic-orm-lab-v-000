@@ -11,4 +11,6 @@ class InteractiveRecord
     sql = "PRAGMA table_info(table_name);"
     
     DB[:conn].execute(sql)
+    column_names = []
+    
 end
