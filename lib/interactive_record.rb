@@ -66,7 +66,7 @@ class InteractiveRecord
       SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0]} = ?
     SQL
     
-    DB[:coon].execute(sql, attribute.values[0])
+    DB[:conn].execute(sql, attribute.values[0])
   end 
   
 end
