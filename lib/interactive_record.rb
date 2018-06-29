@@ -62,10 +62,10 @@ class InteractiveRecord
   
   def self.find_by(attribute)
     sql = <<-SQL
-      SELECT * FROM #{self.table_name} WHERE #{attribute[0]) = ?
+      SELECT * FROM #{self.table_name} WHERE #{attribute.key) = ?
     SQL
     
-    DB[:coon].execute(sql, attribute[1])
+    DB[:coon].execute(sql, attribute.value)
   end 
   
 end
